@@ -65,6 +65,6 @@ You must have the ```curses``` library for your computer. It comes with Mac OS D
 
 Run the program with 
 ```console
-maze 0
+./maze 0
 ```
-You can specify numbers other than ```0``` to try different mazes e.g. ```maze 3```.
+You can specify numbers other than ```0``` to try different mazes e.g. ```./maze 4```.
