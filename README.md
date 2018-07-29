@@ -38,7 +38,12 @@ python Connect4.py
  This directory contains a Python Connect4 game with a smart computer opponent and a graphical display made using Cocos2D.
  ![Image of Connect4](http://cdn.rawgit.com/erikbuck/GameAI/master/Connect4AlphaBetaPython/Connect4.png)
  
- If you already have Cocos2D installed run teh game with
+ If you already have Cocos2D installed run the game with
  ```console
  python Connect4.py
+ ```
+ 
+ If you don't have Cocos2D already, it can usually be installed via
+ ```console
+ python -m pip install cocos2d
  ```
