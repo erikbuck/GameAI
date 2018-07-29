@@ -47,3 +47,8 @@ python Connect4.py
  ```console
  python -m pip install cocos2d
  ```
+
+## Path Finding
+
+### Breadth First Search
+![Image of BreadthFirst](http://cdn.rawgit.com/erikbuck/GameAI/master/MazeSolver/BreadthFirst.png)
