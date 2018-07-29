@@ -1,0 +1,3 @@
+Build with the following command line:
+>g++ *.cpp -lncurses
+
