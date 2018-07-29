@@ -49,6 +49,22 @@ python Connect4.py
  ```
 
 ## Path Finding
+How can computer controlled characters navigate within a game world? Path Finding comprises a set of algorithms to find the lowest cost [in time or distance or both] route between two places in a game world. It may be necessary to navigate around obstacles or go backwards. There may not be any route: you can't get there from here.
 
 ### Breadth First Search
+The MazeSolver directory contains a C++ code to solve mazes. The algorithm finds the shortest route from the entrance of a maze to the exit. The algorithm reports when there is no route to the exit.
+
+Breadth first means that the algorithm considers very position that is three steps away from the entrance before considering any positions that are four steps away. Then it considers all positions that are four steps away before any positions that are five steps away... and so on. It is guaranteed to find the shortest path to an exit even when there are multiple exist because by definition, the algorithm won't even consider and exit that is twenty steps away if there is one that is only nineteen steps away.
 ![Image of BreadthFirst](http://cdn.rawgit.com/erikbuck/GameAI/master/MazeSolver/BreadthFirst.png)
+
+Compile the program with
+```console
+c++ *.cpp -lcurses -o maze
+```
+You must have the ```curses``` library for your computer. It comes with Mac OS Developer tools and is standard on other Unix versions and Linux. There is a compatible library named ```ncurses``` for Windows.
+
+Run the program with 
+```console
+maze 0
+```
+You can specify numbers other than ```0``` to try different mazes e.g. ```maze 3```.
